@@ -3,6 +3,7 @@ const config = require("config")
 const mongoose = require("mongoose")
 const initDatabase = require("./setupDatabase/initDatabase")
 const routes = require("./routes/index")
+const cors = require("cors")
 
 const PORT = config.get("port")
 const URI = config.get("mongoURI")
@@ -12,6 +13,7 @@ const { connect, connection } = mongoose
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
+app.use(cors())
 app.use("/api", routes)
 
 // if (process.env.NODE_ENV === "production") {

@@ -1,20 +1,38 @@
 [
   {
     "date": "09.10.2022",
-    "name": "laptop",
+    "name": "Laptop",
     "quantity": 1,
     "distance": 780
   },
   {
     "date": "19.10.2022",
-    "name": "cup",
+    "name": "Cup",
     "quantity": 12,
     "distance": 974
   },
   {
     "date": "01.11.2022",
-    "name": "card",
+    "name": "Card",
     "quantity": 2,
     "distance": 1567
+  },
+  {
+    "date": "05.11.2022",
+    "name": "Window",
+    "quantity": 1,
+    "distance": 490
+  },
+  {
+    "date": "07.11.2022",
+    "name": "Badge",
+    "quantity": 17,
+    "distance": 78
+  },
+  {
+    "date": "01.12.2022",
+    "name": "Fork",
+    "quantity": 2,
+    "distance": 3
   }
 ]
