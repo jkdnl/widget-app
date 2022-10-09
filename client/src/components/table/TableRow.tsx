@@ -6,7 +6,7 @@ interface Props {
 
 const TableRow: React.FC<Props> = ({children}) => {
     return (
-        <tr className="border-b-2">
+        <tr className="border-b">
             {children}
         </tr>
     );
