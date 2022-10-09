@@ -1,0 +1,25 @@
+{
+  "name": "widget-app-server",
+  "version": "1.0.0",
+  "description": "server for the widget app pet project",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "serve": "cross-env NODE_ENV=development nodemon index.js"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "react",
+    "restAPI"
+  ],
+  "author": "Daniil Iakovlev",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
