@@ -4,6 +4,7 @@ const mongoose = require("mongoose")
 const initDatabase = require("./setupDatabase/initDatabase")
 const routes = require("./routes/index")
 const cors = require("cors")
+const path = require("path")
 
 const PORT = config.get("port")
 const URI = config.get("mongoURI")
@@ -16,11 +17,13 @@ app.use(express.urlencoded({extended: false}))
 app.use(cors())
 app.use("/api", routes)
 
-// if (process.env.NODE_ENV === "production") {
-//     console.log("production server")
-// } else {
-//     console.log("development server")
-// }
+if (process.env.NODE_ENV === "production") {
+    app.use("/", express.static(path.join(__dirname, "client")))
+    const index = path.join(__dirname, "client", "index.html")
+    app.get("*", (req, res) => {
+        res.sendFile(index)
+    })
+}
 
 async function startServer() {
     try {

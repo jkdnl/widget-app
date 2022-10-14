@@ -37,13 +37,13 @@ const MainPage: React.FC = () => {
             switch (select) {
                 case "quantity":
                     if (minValue && maxValue) return item.quantity >= Number(minValue) && item.quantity <= Number(maxValue)
-                    if (minValue) return item.quantity >= Number(minValue)
                     if (maxValue) return item.quantity >= Number(minValue)
+                    if (minValue) return item.quantity >= Number(minValue)
                     return
                 case "distance":
                     if (minValue && maxValue) return item.distance >= Number(minValue) && item.distance <= Number(maxValue)
-                    if (minValue) return item.distance >= Number(minValue)
                     if (maxValue) return item.distance >= Number(minValue)
+                    if (minValue) return item.distance >= Number(minValue)
                     return
                 default:
                     return data
