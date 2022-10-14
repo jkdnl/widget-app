@@ -3,7 +3,7 @@ interface IData {
     date: string,
     name: string,
     quantity: number,
-    distance: string,
+    distance: number,
     createdAt: string,
     updatedAt: string
 }
